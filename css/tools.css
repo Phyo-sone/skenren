@@ -1,0 +1,406 @@
+@charset "UTF-8";
+
+
+/*-------------------------------------------------------------------------------*
+ *	float
+ *-------------------------------------------------------------------------------*/
+
+.f_right {
+	float: right;
+}
+
+.f_left {
+	float: left;
+}
+
+
+/*-------------------------------------------------------------------------------*
+ *	float clear
+ *-------------------------------------------------------------------------------*/
+
+.c_fix {
+	zoom: 100%;
+}
+
+.c_fix:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*-------------------------------------------------------------------------------*
+ *	text-align right, left, center
+ *-------------------------------------------------------------------------------*/
+
+.txt_left {
+	text-align: left;
+}
+
+.txt_right {
+	text-align: right;
+}
+
+.txt_center {
+	text-align: center;
+}
+
+.txt_underline {
+	text-decoration: underline;
+}
+
+/*----------------------------------------------------------------------------------------*
+ *	Text Module - Block
+ *
+ *	div, p, address, blockquote, pre
+ *----------------------------------------------------------------------------------------*/
+
+p.notice {
+	text-indent: -1em;
+	margin-left: 1em;
+}
+
+p.notice_num {
+	text-indent: -1.9em;
+	margin-left: 1.9em;
+}
+
+p.bracket_num {
+	text-indent: -1.7em;
+	margin-left: 1.7em;
+}
+
+p.circle_num {
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	Image Module
+ *
+ *	img
+ *----------------------------------------------------------------------------------------*/
+
+.img_left {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.img_right {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	List Module
+ *
+ *	ul, ol, li, dl, dt, dd
+ *----------------------------------------------------------------------------------------*/
+
+ul.horizontal_list {
+	margin-left: 1em;
+}
+
+ul.horizontal_list li {
+	display: inline;
+	margin-right: 1em;
+}
+
+ul li, ol li {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+ul.notice,
+ul.notice_num {
+	margin-left: 0;
+	list-style-type: none;
+}
+
+ul.notice li {
+	text-indent: -1em;
+	margin-left: 1em;
+}
+
+ul.notice_num li {
+	text-indent: -1.9em;
+	margin-left: 1.9em;
+}
+
+ol.bracket_num {
+	margin-left: 0;
+	list-style-type: none;
+}
+
+ol.bracket_num li {
+	margin-left: 1.7em;
+	text-indent: -1.7em;
+}
+
+ol.circle_num  {
+	list-style-type: none;
+	margin: 1em 0;
+}
+
+ol.circle_num li {
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+ul.upper_a li,
+ol.upper_a li {
+	list-style-type: upper-alpha;
+}
+
+ul.lower_a li,
+ol.lower_a li {
+	list-style-type: lower-alpha;
+}
+
+ul.lower_a li,
+ol.lower_a li {
+	list-style-type: lower-alpha;
+}
+
+dl.indent_2 dt {
+	float: left;
+	width: 2em;
+	margin: 0 -2.5em 0 0;
+}
+
+dl.indent_2 dd {
+	margin: 0 0 0 2.5em;
+	padding: 0 0 0.5em 0;
+}
+
+dl.indent_3 dt {
+	float: left;
+	width: 3em;
+	margin: 0 -3.5em 0 0;
+}
+
+dl.indent_3 dd {
+	margin: 0 0 0 3.5em;
+	padding: 0 0 0.5em 0;
+}
+
+dl.indent_4 dt {
+	float: left;
+	width: 4em;
+	margin: 0 -4.5em 0 0;
+}
+
+dl.indent_4 dd {
+	margin: 0 0 0 4.5em;
+	padding: 0 0 0.5em 0;
+}
+
+dl.indent_5 dt {
+	float: left;
+	width: 5em;
+	margin: 0 -5.5em 0 0;
+}
+
+dl.indent_5 dd {
+	margin: 0 0 0 5.5em;
+	padding: 0 0 0.5em 0;
+}
+
+dl.indent_6 dt {
+	float: left;
+	width: 6em;
+	margin: 0 -6.5em 0 0;
+}
+
+dl.indent_6 dd {
+	margin: 0 0 0 6.5em;
+	padding: 0 0 0.5em 0;
+}
+
+dl.indent_7 dt {
+	float: left;
+	width: 7em;
+	margin: 0 -7.5em 0 0;
+}
+
+dl.indent_7 dd {
+	margin: 0 0 0 7.5em;
+	padding: 0 0 0.5em 0;
+}
+
+dl.indent_8 dt {
+	float: left;
+	width: 8em;
+	margin: 0 -8.5em 0 0;
+}
+
+dl.indent_8 dd {
+	margin: 0 0 0 8.5em;
+	padding: 0 0 0.5em 0;
+}
+
+dl.indent_10 dt {
+	float: left;
+	width: 10em;
+	margin: 0 -10.5em 0 0;
+}
+
+dl.indent_10 dd {
+	margin: 0 0 0 10.5em;
+	padding: 0 0 0.5em 0;
+}
+
+dl.indent_12 dt {
+	float: left;
+	width: 12em;
+	margin: 0 -12.5em 0 0;
+}
+
+dl.indent_12 dd {
+	margin: 0 0 0 12.5em;
+	padding: 0 0 0.5em 0;
+}
+
+dl.indent_14 dt {
+	float: left;
+	width: 14em;
+	margin: 0 -14.5em 0 0;
+}
+
+dl.indent_14 dd {
+	margin: 0 0 0 14.5em;
+	padding: 0 0 0.5em 0;
+}
+
+dl.indent_16 dt {
+	float: left;
+	width: 16em;
+	margin: 0 -16.5em 0 0;
+}
+
+dl.indent_16 dd {
+	margin: 0 0 0 16.5em;
+	padding: 0 0 0.5em 0;
+}
+
+dl.indent_38 dt {
+	float: left;
+	width: 38em;
+	margin: 0 -38.5em 0 0;
+}
+
+dl.indent_38 dd {
+	margin: 0 0 0 38.5em;
+	padding: 0 0 0.5em 0;
+}
+
+dl.indent_38,
+dl.indent_16,
+dl.indent_14,
+dl.indent_12,
+dl.indent_10,
+dl.indent_8,
+dl.indent_7,
+dl.indent_6,
+dl.indent_5,
+dl.indent_4,
+dl.indent_3,
+dl.indent_2 {
+	zoom: 100%;
+}
+
+dl.indent_38:after,
+dl.indent_16:after,
+dl.indent_14:after,
+dl.indent_12:after,
+dl.indent_10:after,
+dl.indent_8:after,
+dl.indent_7:after,
+dl.indent_6:after,
+dl.indent_5:after,
+dl.indent_4:after,
+dl.indent_3:after,
+dl.indent_2:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	Table Module
+ *----------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------- highlight */
+
+table.highlight tr {
+	background-color: #ffffff;
+}
+
+table.highlight tr.on {
+	background-color: #FFFEE8;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	strong, em
+ *----------------------------------------------------------------------------------------*/
+
+em.underline {
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+strong.underline {
+	text-decoration: underline;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	font
+ *----------------------------------------------------------------------------------------*/
+
+.fred {
+	color: #cc0000;
+}
+
+.fblue {
+	color: #0000cc;
+}
+
+.small {
+	font-size: 85%;
+}
+
+
+/*-------------------------------------------------------------------------------*
+ *	Clear fix
+ *-------------------------------------------------------------------------------*/
+
+.clearFix {
+	zoom: 100%;
+}
+
+.clearFix:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}

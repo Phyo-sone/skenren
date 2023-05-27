@@ -1,0 +1,8 @@
+AuthUserFile /var/www/saitama.kenren-coop.jp/docs/17_member/.htpasswd
+AuthGroupFile /dev/null
+AuthName "saitama-kenren"
+AuthType Basic
+require valid-user
+<Files ~ "^.(htpasswd|htaccess)$">
+deny from all
+</Files>

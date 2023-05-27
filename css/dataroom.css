@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+
+/*--------------------------------------------------------------------
+ *	main
+ *--------------------------------------------------------------------*/
+
+#container div#main ul.nendo {
+	margin-left: 0;
+	padding-right: 10px;
+	list-style-type: none;
+	display:table; 
+	table-layout: fixed;
+	width:100%; 
+}
+
+#container div#main ul.nendo li { 
+	display: inline;
+	padding: 0 42px 0 0;
+}
+#container div#main ul li.end { 
+	display: inline;
+	padding: 0;
+}
+
+#container div#main ul.nendo li a.btn {
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: #71b539;
+	border: solid 2px #71b539;
+	border-radius: 3px;
+	transition: .4s;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#container div#main ul.nendo li a.btn:hover {
+	background: #71b539;
+	color: #ffffff;
+}
+
+
+#container div#main {
+	width: auto;
+	margin: 15px auto;
+	text-align: left;
+}
+
+#container div#main ul.backnumber li.list {
+	display: inline-block;
+	width: auto;
+	padding-right: 30px;
+}
+/*-------------------------------------------------------------------------------*
+ *	Clear fix
+ *-------------------------------------------------------------------------------*/
+
+div#header,
+div#header h3 {
+	zoom: 100%;
+}
+
+div#header {
+div#header h3 {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}

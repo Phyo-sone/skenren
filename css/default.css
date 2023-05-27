@@ -1,0 +1,323 @@
+@charset "Shift-JIS";
+
+
+/*----------------------------------------------------------------------------------------*
+ *	Structure Module
+ *
+ *	html, head, body, title
+ *----------------------------------------------------------------------------------------*/
+
+html {
+	height: 100%;
+	padding-bottom: 1px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 14px/1.6 "���C���I", Sans-Serif;
+}
+
+* html body {
+	font: 88%/1.6 "�l�r �o�S�V�b�N", Sans-Serif;
+}
+
+*:first-child+html body {
+	font-size: 88%;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	Text Module - Heading
+ *
+ *	h1, h2, h3, h4, h5, h6
+ *----------------------------------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 2em 0 1em 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	Text Module - Block
+ *
+ *	div, p, address, blockquote, pre
+ *----------------------------------------------------------------------------------------*/
+
+div {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 1em 0;
+	padding: 0;
+}
+
+address {
+	margin: 1em 0;
+	padding: 0;
+	font-style: normal;
+	font-weight: normal;
+}
+
+blockquote {
+	margin: 1em 0;
+	padding: 0;
+}
+
+pre {
+	margin: 1em 0;
+	padding: 0;
+	font-family: "�l�r �S�V�b�N", "MS Gothic", "Osaka-����", monospace;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	Text Module - Inline
+ *
+ *	span, strong, em, br, abbr, acronym, dfn, cite, q, code, kbd, samp, var
+ *----------------------------------------------------------------------------------------*/
+
+em {
+	font-style: normal;
+	font-weight: normal;
+}
+
+strong {
+	font-style: normal;
+	font-weight: bold;
+}
+
+abbr,
+acronym {
+	font-size: 100%;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none;
+}
+
+dfn {
+	font-style: normal;
+	font-weight: normal;
+}
+
+cite,
+q {
+	font-style: normal;
+	font-weight: normal;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+code,
+kbd,
+samp,
+var {
+	font-style: normal;
+	font-weight: normal;
+	font-family: "�l�r �S�V�b�N", "MS Gothic", "Osaka-����", monospace;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	List Module
+ *
+ *	ul, ol, li, dl, dt, dd
+ *----------------------------------------------------------------------------------------*/
+
+ul {
+	/* margin: 1em 0 1em 30px; */
+	padding: 0;
+	list-style: disc none outside;
+}
+
+ol {
+	margin: 1em 0 1em 30px;
+	padding: 0;
+	list-style: decimal none outside;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+dl {
+	margin: 1em 0;
+	padding: 0;
+}
+
+dt {
+	margin: 1em 0 0 0;
+	padding: 0;
+}
+
+dd {
+	margin: 0 0 0 1em;
+	padding: 0;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	Image Module
+ *
+ *	img
+ *----------------------------------------------------------------------------------------*/
+
+img {
+	border: none;
+	vertical-align: text-bottom;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	Table Module
+ *
+ *	table, caption, tr, th, td, col, colgroup, thead, tbody, tfoot
+ *----------------------------------------------------------------------------------------*/
+
+table {
+	margin: 0.5em 0;
+	padding: 0;
+	border-collapse: collapse;
+	/*border: 1px solid #666666;*/
+	border: none;
+	font-size: 100%;
+	line-height: 1.6;
+}
+
+th {
+	padding: 5px;
+	border: 1px solid #666666;
+	background-color: #eeeeee;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+}
+
+td {
+	padding: 5px;
+	border: 1px solid #666666;
+	vertical-align: top;
+}
+
+caption {
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	Presentation Module
+ *
+ *	hr, sub, sup, tt, i, b, big, small
+ *----------------------------------------------------------------------------------------*/
+
+hr {
+	margin: 1em 0;
+	padding: 0;
+}
+
+sup {
+	vertical-align: text-top;
+	font-size: 85%;
+}
+
+sub {
+	vertical-align: text-bottom;
+	font-size: 85%;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	Edit Module
+ *
+ *	del, ins
+ *----------------------------------------------------------------------------------------*/
+
+del {
+	text-decoration: line-through;
+}
+
+ins {
+	text-decoration: none;
+}
+
+
+/*----------------------------------------------------------------------------------------*
+ *	Form Module
+ *
+ *	form, fieldset, legend, label, input, select, option, optgroup, textarea, button
+ *----------------------------------------------------------------------------------------*/
+
+form {
+	margin: 1em 0;
+	padding: 0;
+}
+
+fieldset {
+	margin: 1em 0;
+	padding: 1em;
+}
+
+legend {
+	margin: 0;
+	padding: 0;
+	color: #000000;
+}
+
+label {
+	vertical-align: middle;
+}
+
+input {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+select {
+	font-size: 100%;
+}
+
+optgroup {
+	font-style: italic;
+	font-weight: bold;
+}
+
+textarea {
+	font-size: 100%;
+	font-family: "�l�r �S�V�b�N", "MS Gothic", "Osaka-����", monospace;
+	line-height: 1.2;
+	vertical-align: top;
+	overflow: scroll;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: middle;
+	line-height: 1.2;
+}
+
+
+/***********11_privacy************/
+.policy-date {
+	text-align: right;
+}

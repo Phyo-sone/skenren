@@ -1,0 +1,233 @@
+<HTML>
+<HEAD>
+<TITLE>�������</TITLE>
+<!-- ���̉��́A�����̂悤�ɒ����Ă���<HEAD>�`</HEAD>�̒��ɏ����܂��B-->
+<Script Language="JavaScript">
+<!--
+///////////////////////////////////////////////////
+// �n�C�p�[�����N No.8.1(��) Produced by�uCLUB �Ƃނ��N�v
+// URL http://www2s.biglobe.ne.jp/~club_tom/
+// ���2�s�͒��쌠�\���ł��̂ŏ����Ȃ��ŉ�����
+///////////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+// ���j���[���\�������t���[�������I�����ɂǂ̊K�w�܂Ń��j���[��\�����邩��
+// �I�����̕����F�Ɣw�i�F���w�i�F�������ĉ������B(�v��Ȃ��ꍇ�� "" �Ə����ĉ������B)
+var frameRi81="menu";       // �t���[����
+var kaiViRi81=1;            // �K�w(0����n�܂�܂��B)
+var foMeCoRi81="#FF0000";   // �I�����̕����F
+var bgMeCoRi81="";   // �I�����̔w�i�F
+var bgCoRi81="#FFFFFF";     // �w�i�F
+///////////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+// ���j���[�̗]���̃T�C�Y���_�~�[�摜�������ĉ������B
+var kaiWRi81=15,kaiHRi81=25;   // �T�C�Y(���ƍ���)
+var kaiImDaRi81="images/damy.gif";    // �_�~�[�摜
+///////////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+// ���j���[�摜�̃T�C�Y�ƃt�@�C�����������ĉ������B
+// �T�C�Y�̍����́A���j���[�̗]���Ɠ����ɂ��邱�Ƃ����E�߂��܂��B
+var foWRi81=25,foHRi81=25;        // �T�C�Y(���ƍ���)
+var foImRi81=new Array();
+foImRi81[0]=new Array();
+foImRi81[0][0]="images/fol_030.gif";   // �I��O
+foImRi81[0][1]="images/fol_019.gif";     // �I����
+foImRi81[1]=new Array();
+foImRi81[1][0]="images/fol_026.gif";
+foImRi81[1][1]="images/fol_022.gif";
+foImRi81[2]=new Array();
+foImRi81[2][0]="images/fol_025.gif";
+foImRi81[2][1]="images/fol_023.gif";
+foImRi81[3]=new Array();
+foImRi81[3][0]="images/fol_027.gif";
+foImRi81[3][1]="images/fol_024.gif";
+foImRi81[4]=new Array();
+foImRi81[4][0]="images/fol_028.gif";
+foImRi81[4][1]="images/fol_017.gif";
+foImRi81[5]=new Array();
+foImRi81[5][0]="images/fol_029.gif";
+foImRi81[5][1]="images/fol_020.gif";
+foImRi81[6]=new Array();
+foImRi81[6][0]="images/damy.gif";
+foImRi81[6][1]="images/damy.gif";
+///////////////////////////////////////////////////
+
+// ���j���[��ݒ肷�镔���ł��B
+function writeMeRi81() {
+	///////////////////////////////////////////////////
+	// ���̉��́A���j���[�̐ݒ蕔���ł��B
+	// setMeRi81(���j���[�ԍ�,�e���j���[�ԍ�,�q���j���[�����邩,
+	// "�^�C�g��",�����T�C�Y,"URL","�^�[�Q�b�g","�����̐F",���j���[�摜�ԍ�)
+	// �̂悤�ɂȂ��Ă��܂��B
+	// (�A���A�uHOME�v�́A�Ōオ�u�t�H���_�摜,��,�����v�ɂȂ�܂��B)
+	// ���̂悤�Ƀ��j���[�ԍ��̏��Ԃɏ����ĉ������B
+	// �e���j���[�ԍ����Ȃ���(�K�w��0)�́A-1 �Ə����ĉ������B
+	// �q���j���[�����邩�́A"yes"(����)�A"no"(�Ȃ�)�ŏ����ĉ������B
+	// (�^�[�Q�b�g�̏������͈ȉ�����I��ŉ������B
+	//  �t���[�����F���̃t���[���̒��ɕ\������܂��B
+	//  _top�F�t���[�����������ĕ\������܂��B
+	//  _blank�F�V�����E�B���h�E�̒��ɕ\������܂��B
+	//  _self�F���̃t���[���̒��ɕ\������܂��B
+	//  �܂��A�W�����v���Ȃ��ꍇ�́A"URL" �� "" �Ə����ĉ������B)
+	// ���j���[�摜�́A��Őݒ肵�� foImRi81[?][*]="�`" �� ? �������ĉ������B
+
+	setMeRi81(-1,"","","");
+	// �u�n��E�w�������v�̕����ł��B
+	setMeRi81(0,-1,"yes","�n��E�w������",2,"","","#660000",0);
+	setMeRi81(1,0,"no","���������g��<br>�@�@�@�@�@�@�������܃R�[�v",2,"member/saitama_coop.html","naiyou","#990099",6);
+	setMeRi81(2,0,"no","�����N���u<br>�@�@�@�@�@�@���������g��",2,"member/seikatu_club.html","naiyou","#990099",6);
+	setMeRi81(3,0,"no","���������g��<br>�@�@�@�@�@�@�h�D�R�[�v",2,"member/do_coop.html","naiyou","#990099",6);
+	setMeRi81(4,0,"no","��ʌ��ΘJ��<br>�@�@�@�@�@�@���������g��",2,"member/kinrou.html","naiyou","#990099",6);
+
+	// �u��w�����v�̕����ł��B
+	setMeRi81(5,-1,"yes","��w����",2,"","","#660000",1);
+	setMeRi81(6,5,"no","��ʑ�w���������g��",2,"member/saidai.html","naiyou","#990099",6);
+	setMeRi81(7,5,"no","�Ռ��w�����q��w<br>�@�@�@�@�@�@���������g��",2,"member/atomi.html","naiyou","#990099",6);
+	setMeRi81(8,5,"no","�哌�����w��<br>�@�@�@�@�@�@���������g��",2,"member/daitou.html","naiyou","#990099",6);
+	setMeRi81(9,5,"no","�\�����w��<br>�@�@�@�@�@�@���������g��",2,"member/jumonji.html","naiyou","#990099",6);
+	setMeRi81(10,5,"no","�i����w�݂��ّ�<br>�@�@�@�@�@�@���������g��",2,"member/shukutoku.html","naiyou","#990099",6);
+	
+	// �u�E��v�̕����ł��B
+	setMeRi81(11,-1,"yes","�E�搶��",2,"","","#660000",2);
+	setMeRi81(12,11,"no","�V�`�Y�����v����<br>�@�@�@�@�@�@���������g��",2,"member/citizen.html","naiyou","#990099",6);
+	setMeRi81(13,11,"no","�{�b�V���u���[�L�V�X�e��<br>�@�@�@�@�@�@���������g��",2,"member/bosshu.html","naiyou","#990099",6);
+	setMeRi81(14,11,"no","�ԕH�D�����������g��",2,"member/hanabisi.html","naiyou","#990099",6);
+	
+	// �u��Áv�̕����ł��B
+	setMeRi81(15,-1,"yes","��Ð���",2,"","","#660000",3);
+	setMeRi81(16,15,"no","��Ð���<br>�@�@�@�@�@�@�������ܐ��������g��",2,"member/iryou.html","naiyou","#990099",6);
+	
+	// �u�e�퐶���v�̕����ł��B
+	setMeRi81(17,-1,"yes","�e�퐶��",2,"","","#660000",4);
+	setMeRi81(18,17,"no","��ʌ��J���ҋ���<br>�@�@�@�@�@�@���������g��",2,"member/rousai.html","naiyou","#990099",6);
+	setMeRi81(19,17,"no","�������܏Z��<br>�@�@�@�@�@�@���������g��",2,"member/jutaku.html","naiyou","#990099",6);
+	setMeRi81(20,17,"no","�q�ǂ��̂��̕ۈ�<br>�@�@�@�@�@�@���������g��",2,"member/kodomonosono.html","naiyou","#990099",6);
+	setMeRi81(21,17,"no","���������g��<br>�@�@�@�@�@�@�������܍��",2,"member/koureikyou.html","naiyou","#990099",6);
+	
+	// �u���ƘA���v�̕����ł��B
+	setMeRi81(22,-1,"yes","���ƘA����",2,"","","#660000",5);
+	setMeRi81(23,22,"no","���������g���A����<br>�@�@�@�@�@�@�R�[�v�l�b�g���ƘA��",2,"member/coopnet.html","naiyou","#990099",6);	
+	///////////////////////////////////////////////////
+}
+
+var i,kazRi81,htmlRi81,html0Ri81=new Array(),html1Ri81=new Array();
+var kaiRi81=new Array(),visRi81=new Array(),visCRi81=new Array();
+var setRi81=new Array(),foImFlRi81=new Array();
+var urlTopRi81,targetTopRi81,urlRi81=new Array(),targetRi81=new Array();
+writeMeRi81();
+
+// ���j���[�̓�����ݒ肵�Ă��镔���ł��B
+function setMeRi81(nu,seNu,fl,ti,si,ur,ta,fo,im,w,h) {
+	if (nu!=-1) {
+		var i,kIm="",u,im0,im1,li0,li1;
+		kazRi81=nu;
+		setRi81[nu]=seNu;
+		if (seNu==-1) kaiRi81[nu]=0;
+		else kaiRi81[nu]=kaiRi81[seNu]+1;
+		if (kaiRi81[nu]==0) visRi81[nu]=true;
+		else visRi81[nu]=false;
+		if (fl=="yes") visCRi81[nu]=false;
+		else visCRi81[nu]="no";
+		urlRi81[nu]=ur,targetRi81[nu]=ta;
+		foImFlRi81[nu]=im;
+		kIm='<IMG SRC="'+kaiImDaRi81+'" ALIGN="bottom" WIDTH="'+(kaiWRi81*(kaiRi81[nu]+1))+'" HEIGHT="'+kaiHRi81+'">';
+		im0='<IMG SRC="'+foImRi81[im][0]+'" ALIGN="bottom" BORDER="0" WIDTH="'+foWRi81+'" HEIGHT="'+foHRi81+'">';
+		im1='<IMG SRC="'+foImRi81[im][1]+'" ALIGN="bottom" BORDER="0" WIDTH="'+foWRi81+'" HEIGHT="'+foHRi81+'">';
+
+		li0='<FONT SIZE="'+si+'" COLOR="'+fo+'"><SPAN style="background-color:'+bgCoRi81+'">'+ti+'</SPAN></FONT>';
+		li1='<FONT SIZE="'+si+'" COLOR="'+foMeCoRi81+'"><SPAN style="background-color:'+bgMeCoRi81+'">'+ti+'</SPAN></FONT>';
+		if (ur=="") u='<A HREF="#" onClick="parent.clickEveRi81('+nu+',false);return false">';
+		else u='<A HREF="#" onClick="parent.clickEveRi81('+nu+',true);return false">';
+		html1Ri81[nu]=new Array();
+		html1Ri81[nu][0]=kIm+u+im0+'</A> '+u+li0+'</A><BR>';
+		html1Ri81[nu][1]=kIm+u+im1+'</A> '+u+li0+'</A><BR>';
+		html1Ri81[nu][2]=kIm+u+im0+'</A> '+u+li1+'</A><BR>';
+		html1Ri81[nu][3]=kIm+u+im1+'</A> '+u+li1+'</A><BR>';
+		if (visRi81[nu]) {
+			if (visCRi81[nu]==true) htmlRi81+=html1Ri81[nu][1];
+			else htmlRi81+=html1Ri81[nu][0];
+		}
+	}
+	else {
+		urlTopRi81=ur,targetTopRi81=ta;
+		li0='<FONT SIZE="'+si+'" COLOR="'+fo+'"><SPAN style="background-color:'+bgCoRi81+'">'+ti+'</SPAN></FONT>';
+		li1='<FONT SIZE="'+si+'" COLOR="'+foMeCoRi81+'"><SPAN style="background-color:'+bgMeCoRi81+'">'+ti+'</SPAN></FONT>';
+		if (ur=="") u='<A HREF="#" onClick="parent.clickEveRi81('+nu+',false);return false">';
+		else u='<A HREF="#" onClick="parent.clickEveRi81('+nu+',true);return false">';
+		html0Ri81[0]=u+'<IMG SRC="'+im+'" ALIGN="bottom" BORDER="0" WIDTH="'+w+'" HEIGHT="'+h+'"></A> '+u+li0+'</A><BR>';
+		html0Ri81[1]=u+'<IMG SRC="'+im+'" ALIGN="bottom" BORDER="0" WIDTH="'+w+'" HEIGHT="'+h+'"></A> '+u+li1+'</A><BR>';
+		htmlRi81=html0Ri81[0];
+	}
+}
+
+// �t�H���_�������N���N���b�N�������̓��암���ł��B
+function clickEveRi81(nu,fl) {
+	var i,f=true;
+	if (nu!=-1 && visCRi81[nu]==false) {
+		visCRi81[nu]=true;
+		if (kaiRi81[nu]==0) {
+			for (i=0;i<=kazRi81;i++) {
+				if (visCRi81[i]!="no" && i!=nu) visCRi81[i]=false;
+				if (kaiRi81[i]>0) visRi81[i]=false;
+				if (i>nu) {
+					if (kaiRi81[i]==0) f=false;
+					if (f) {
+						if (kaiRi81[i]<=kaiViRi81) {
+							if (visCRi81[i]!="no" && kaiRi81[i]<kaiViRi81) visCRi81[i]=true;
+							visRi81[i]=true;
+						}
+					}
+				}
+			}
+		}
+		else {
+			for (i=nu+1;i<=kazRi81;i++) {
+				if (kaiRi81[i]!=kaiRi81[nu]+1) f=false;
+				if (f) visRi81[i]=true;
+			}
+		}
+	}
+	if (nu==-1) htmlRi81=html0Ri81[1];
+	else htmlRi81=html0Ri81[0];
+	for (i=0;i<=kazRi81;i++) {
+		if (visRi81[i]) {
+			if (nu==i) {
+				if (visCRi81[i]==true) htmlRi81+=html1Ri81[i][3];
+				else if (visCRi81[i]==false) htmlRi81+=html1Ri81[i][2];
+				else htmlRi81+=html1Ri81[i][3];
+			}
+			else {
+				if (visCRi81[i]==true) htmlRi81+=html1Ri81[i][1];
+				else htmlRi81+=html1Ri81[i][0];
+			}
+		}
+	}
+	if (frames[frameRi81]) {
+		frames[frameRi81].location.reload();
+		if (fl) {
+			var u,t;
+			if (nu!=-1) u=urlRi81[nu],t=targetRi81[nu];
+			else u=urlTopRi81,t=targetTopRi81;
+			if (t=="_top") top.location.href=u;
+			else if (t=="_self") frames[frameRi81].location.href=u;
+			else if (t=="_blank") {
+				if (navigator.appVersion.indexOf("Mac")!=-1 && navigator.appName.indexOf("Internet Explore")!=-1) {
+					window.open(u,"","toolbar=yes,location=yes,directories=yes,status=yes,menubar=yes,scrollbars=yes,favorites=yes,resizable=yes");
+				} else window.open(u);
+			}
+			else if (frames[t]) frames[t].location.href=u;
+		}
+	}
+}
+// End -->
+</Script>
+</HEAD>
+<FRAMESET border="0" COLS="250,*" FRAMEBORDER="no" framespacing="0" rows="*"> 
+  <FRAME SRC="menu.html" NAME="menu" noresize>
+  <FRAME SRC="top.html" NAME="naiyou">
+</FRAMESET>
+<noframes> 
+</noframes> 
+</HTML>

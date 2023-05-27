@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+/*-------------------------------------------------------------------------------*
+ *	Copyright (c) 2007, 埼玉県生活協同組合連合会 All rights reserved.
+ *
+ *	ファイル名: common.css
+ *	概要      : 汎用クラスの定義
+ *-------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------------*
+ *	Clear fix
+ *-------------------------------------------------------------------------------*/
+
+.clearFix {
+	zoom: 100%;
+}
+
+.clearFix:after {
+	content : " ";
+	clear : both;
+	height : 0;
+	display : block;
+	visibility : hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+/*-------------------------------------------------------------------------------*
+ *	font
+ *-------------------------------------------------------------------------------*/
+
+.f120 {
+	font-size: 120%;
+}
+
+.f110 {
+	font-size: 110%;
+}
+
+.f90 {
+	font-size: 90%;
+}
+
+.f80 {
+	font-size: 80%;
+}
+
+
+/*-------------------------------------------------------------------------------*
+ *	imgのfloat:left, float:right
+ *-------------------------------------------------------------------------------*/
+
+.imgLeft {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.imgRight {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+
+/*-------------------------------------------------------------------------------*
+ *	text-align right, left, center
+ *-------------------------------------------------------------------------------*/
+
+.textLeft {
+	text-align: left;
+}
+
+.textRight {
+	text-align: right;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+
+/*-------------------------------------------------------------------------------*
+ *	ページのトップへ戻る
+ *-------------------------------------------------------------------------------*/
+
+.toTop {
+	width: 100%;
+	text-align: right;
+	margin: 20px 0 10px 0;
+}
+
+
+/*-------------------------------------------------------------------------------*
+ *	box
+ *-------------------------------------------------------------------------------*/
+
+.boxWhite {
+	padding: 10px;
+	border: 1px solid #666666;
+}
+
+
+/*-------------------------------------------------------------------------------*
+ *	text-indent
+ *-------------------------------------------------------------------------------*/
+
+.indent1 {
+	text-indent: -1em;
+	margin-left: 1em;
+}
+
+
+/*-------------------------------------------------------------------------------*
+ *	hr
+ *-------------------------------------------------------------------------------*/
+
+.dotted {
+	border-style: dotted none none none;
+	border-top-width: 1px;
+	border-top-color: #cccccc;
+	height: 1px;
+}
+
+
+/*-------------------------------------------------------------------------------*
+ *	list - ul, ol
+ *-------------------------------------------------------------------------------*/
+
+.markB li {
+	list-style: none;
+	padding: 0 0 0 10px;
+	background: transparent url('../images/list_mark.gif') no-repeat left 0.6em;
+}
+
+.markNum li {
+	margin-left: 25px;
+	list-style: decimal outside none;
+}
+
+.markDisc li {
+	margin-left: 25px;
+	list-style: disc outside none;
+}
+
+/*-------------------------------------------------------------------------------*
+ *	list - dl
+ *-------------------------------------------------------------------------------*/
+
+.dt4 dt {
+	float: left;
+	width: 4em;
+	margin-right: -4.5em;
+}
+
+.dt4 dd {
+	margin-left: 4.5em;
+}
+
+.dt5 dt {
+	float: left;
+	width: 5em;
+	margin-right: -5.5em;
+}
+
+.dt5 dd {
+	margin-left: 5.5em;
+}
+
+.dt6 dt {
+	float: left;
+	width: 6em;
+	margin-right: -6.5em;
+}
+
+.dt6 dd {
+	margin-left: 6.5em;
+}
+
+.dt7 dt {
+	float: left;
+	width: 7em;
+	margin-right: -7.5em;
+}
+
+.dt7 dd {
+	margin-left: 7.5em;
+}
+
+.dt10 dt {
+	float: left;
+	width: 10em;
+	margin-right: -10.5em;
+}
+
+.dt10 dd {
+	margin-left: 10.5em;
+}
+
+.indent dd {
+	margin-left: 1em;
+}
+
+.mark_blue dt {
+	margin: 1em 0 0 0;
+	padding: 0 0 0 10px;
+	border-left: 5px solid #214CA3;
+	line-height: 1.3;
+}
+.mark_blue dd {
+	margin: 0.5em 0 0 15px;
+}
+
+/*-------------------------------------------------------------------------------*
+ *	table
+ *-------------------------------------------------------------------------------*/
+
+.tableGray {
+	border-collapse: collapse;
+	border: 1px solid #cccccc;
+}
+
+.tableGray th, .tableGray td {
+	padding: 5px;
+	border: 1px solid #cccccc;
+}
+
+.tableGray th {
+	background-color: #eeeeee;
+}
+
+.vtop td {
+	vertical-align: top;
+}
+
+.tableGray .odd td {
+	background-color: #ffffff;
+}
+
+.tableGray .even td {
+	background-color: #F5FCFF;
+}
+
+/*-------------------------------------------------------------------------------*
+ *	photo
+ *-------------------------------------------------------------------------------*/
+
+.photo img {
+	display: block;
+}
+
+.photo .caption {
+	width: auto;
+	margin: 0;
+	padding: 3px;
+	background-color: #eeeeee;
+	font-size: 80%;
+}
+
+/*-------------------------------------------------------------------------------*
+ *	others
+ *-------------------------------------------------------------------------------*/
+
+.new {
+	margin-left: 10px;
+	color: #ff0000;
+	font-weight: bold;
+}
+
+/*-------------------------------------------------------------------------------*
+ *	document
+ *-------------------------------------------------------------------------------*/
+
+.doc {
+	width: 600px;
+	margin: 1em auto 2em auto;
+}
+
+.doc .day {
+	text-align: right;
+}
+
+.doc .public_notice {
+	width: 5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+	text-align: center;
+	line-height: 3.0;
+}
+
+.doc .signature {
+	text-align: right;
+}
+
+.doc h2 {
+	border: none;
+	text-align: center;
+}
+
+.doc h3 {
+	padding: 0;
+	border: none;
+}
+
+/*-------------------------------------------------------------------------------*
+ *	Clear fix
+ *-------------------------------------------------------------------------------*/
+
+.clearFix {
+	zoom: 100%;
+}
+
+.clearFix:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}

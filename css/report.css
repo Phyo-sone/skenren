@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------------
+ *	共通の記述
+ *--------------------------------------------------------------------*/
+
+body.second #main img {
+	width: 100%;
+	height: auto;
+}
+
+body.report div#container div#main div.notice {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #00008b;
+}
+body.report div#container div#main div.notice p.notice_txt {
+	padding: 0 10px;
+	color: #00008b;
+}
+
+
+
+/*--------------------------------------------------------------------
+ *	767px以下用（SP用）の記述
+ *--------------------------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+/* 767px以下用（SP用）の記述 */
+
+/*------------------------------------------ news_yymmdd_01 */
+
+body#news_yymmdd_01 #main .xxxx {
+	/* サンプル */
+}
+
+/*------------------------------------------ report_190105_01 */
+
+body#report_200105_01 div.img_box  {
+	max-width: 345px;
+}
+
+body.report div#container div#main div.img_box p.txt_center {
+	margin: 0 0 15px 0;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+body.report div#container div#main div.notice {
+	margin-top: 10px;
+}
+
+body.report div#container div#main p.link_arrowword {
+    position: relative;
+    padding: 0 0 0 15px;
+}
+
+body.report div#container div#main p.link_arrowword::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 12px;
+    height: 12px;
+    margin: auto;
+    background: #7a0;
+    vertical-align: middle;
+    margin-top: 0.3em;
+}
+body.report div#container div#main p.link_arrowword::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 3px;
+    content: "";
+    width: 3px;
+    height: 3px;
+    margin: auto;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    vertical-align: middle;
+    margin-top: 0.6em;
+}
+
+/* 767px以下用（SP用）の記述 end */
+}
+
+
+/*--------------------------------------------------------------------
+ *	768px以上用（PC用）の記述
+ *--------------------------------------------------------------------*/
+@media screen and (min-width: 768px), print {
+/* 768px以上用（PC用）の記述 */
+
+body.report div#container div#main h3 {
+	margin: 0 0 1em;
+}
+
+body#report_200105_01 div#container div#main div.img_box {
+	width: 350px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+body.report div#container div#main div.img_box {
+	text-align: center;
+}
+
+body.report div#container div#main div.img_box p.txt_center {
+	display: inline-block;
+	margin: 0 10px 15px 0;
+	text-align: center;
+	font-size: 12px;
+	vertical-align: top;
+	width: 300px;
+}
+
+body.report div#container div#main div.img_box p.txt_center img {
+	margin-bottom: 5px;
+}
+
+body#news_yymmdd_01 #main .xxxx {
+	/* サンプル */
+}
+
+
+
+
+/* 768px以上用（PC用）の記述 end */
+}
+
+/*--------------------------------------------------------------------
+ *	印刷用（PC表示）の記述
+ *--------------------------------------------------------------------*/
+@media print {
+/* 印刷用（PC表示）の記述 */
+
+
+/* 印刷用（PC表示）の記述 end */
+}
+
+
+/*------------------------------------------ clear */
+body.second {
+	zoom: 100%;
+}
+
+body.second::after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}

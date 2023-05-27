@@ -1,0 +1,266 @@
+/*　テキストフレーム　*/
+#maine{
+	width:510px;
+	hight:100%;
+	font-size: 10pt;
+	line-height: 12pt;
+	margin: 10px 0 0 10px;
+	padding: 0;
+	background-color: #FFFFFF;
+}
+
+/*　フォント　*/
+h1{
+	margin: 0px 0 20px 0px;
+}
+h2{
+	border: solid;
+	border-width: 0px 0px 1px 10px;
+	margin: 20px 0 10px 0px;
+	padding: 5px;
+	border-color: #cc3300;
+	font-size: 12pt;
+	color: #333333;
+}
+h2.orange{
+	border: solid;
+	border-width: 0px 0px 1px 10px;
+	margin: 20px 0 10px 0px;
+	padding: 5px;
+	border-color: #ff6600;
+	font-size: 12pt;
+	color: #333333;
+}
+h2.blue{
+	border: solid;
+	border-width: 0px 0px 1px 10px;
+	margin: 20px 0 10px 0px;
+	padding: 5px;
+	border-color: #336699;
+	font-size: 12pt;
+	color: #333333;
+}
+h2.gray{
+	border: solid;
+	border-width: 0px 0px 1px 10px;
+	margin: 20px 0 10px 0px;
+	padding: 5px;
+	border-color: #666666;
+	font-size: 12pt;
+	color: #333333;
+}
+h2.green1{
+	border: solid;
+	border-width: 0px 0px 1px 10px;
+	margin: 20px 0 10px 0px;
+	padding: 5px;
+	border-color: #00662C;
+	font-size: 12pt;
+	color: #333333;
+}
+h2.green2{
+	border: solid;
+	border-width: 0px 0px 1px 10px;
+	margin: 20px 0 10px 0px;
+	padding: 5px;
+	border-color: #7abe00;
+	font-size: 12pt;
+	color: #333333;
+}
+h2.pink{
+	border: solid;
+	border-width: 0px 0px 1px 10px;
+	margin: 20px 0 10px 0px;
+	padding: 5px;
+	border-color: #ff3399;
+	font-size: 12pt;
+	color: #333333;
+}
+h2.purple{
+	border: solid;
+	border-width: 0px 0px 1px 10px;
+	margin: 20px 0 10px 0px;
+	padding: 5px;
+	border-color: #663399;
+	font-size: 12pt;
+	color: #333333;
+}
+
+h3{
+	border: solid;
+	border-width: 1px 8px 1px 8px;
+	margin: 20px 0 10px 0px;
+	padding: 3px 5px 3px 5px;
+	border-color: #669933;
+	font-size: 12pt;
+	color: #333333;
+}
+h4{
+}
+.font12{
+	font-size: 12pt;
+}
+
+/*　埼玉県生協連について　*/
+
+.profile {
+	width: 100%;
+	margin-bottom: 5pt;
+	border-collapse: collapse;
+	border: 1px solid #cccccc;
+}
+
+.profile th, .profile td {
+	padding: 3px;
+	border: 1px solid #cccccc;
+}
+
+.profile th {
+	background-color: #FFF2DF;
+	font-weight: normal;
+	text-align: center;
+}
+
+/*　県内の生協テーブル　*/
+.memberorange {
+	margin: 0 0 2px 20px ;
+	padding: 0px;
+	font-size: 10pt;
+	color: #ff6600;
+}
+.memberblue {
+	margin: 0 0 3px 20px ;
+	padding: 0px;
+	font-size: 10pt;
+	color: #336699;
+}
+.membergray {
+	margin: 0 0 3px 20px ;
+	padding: 0px;
+	font-size: 10pt;
+	color: #666666;
+}
+.membergreen1 {
+	margin: 0 0 3px 20px ;
+	padding: 0px;
+	font-size: 10pt;
+	color: #00662C;
+}
+.membergreen2 {
+	margin: 0 0 3px 20px ;
+	padding: 0px;
+	font-size: 10pt;
+	color: #7abe00;
+}
+.memberpink {
+	margin: 0 0 3px 20px ;
+	padding: 0px;
+	font-size: 10pt;
+	color: #ff3399;
+}
+.tablemember {
+	width: 100%;
+	margin-bottom: 10pt;
+	border-collapse: collapse;
+	border: 1px solid #cccccc;
+}
+
+.tablemember th, .tablemember td {
+	padding: 5px;
+	border: 1px solid #cccccc;
+}
+
+.tablemember th {
+	background-color: #FFF2DF;
+	width: 100px;
+	font-weight: normal;
+	text-align: center;
+}
+.tablemember th orange {
+	background-color: #FFF2DF;
+	width: 100px;
+	font-weight: normal;
+	text-align: center;
+}
+.tablemember th.blue {
+	background-color: #EEF3F9;
+	width: 100px;
+	font-weight: normal;
+	text-align: center;
+}
+.tablemember th.gray {
+	background-color: #EEEEEE;
+	width: 100px;
+	font-weight: normal;
+	text-align: center;
+}
+.tablemember th.green1 {
+	background-color: #ECFFEF;
+	width: 100px;
+	font-weight: normal;
+	text-align: center;
+}
+.tablemember th.green2 {
+	background-color: #F9FFEC;
+	width: 100px;
+	font-weight: normal;
+	text-align: center;
+}
+.tablemember th.pink {
+	background-color: #FFF0F8;
+	width: 100px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.tablemember td {
+	background-color: #FFFFFF;
+}
+
+.tablemember td.non {
+	background-color: #EEEEEE;
+	text-align: center;
+}
+.float{
+	float: left;
+	margin: 0px 10px 0px 0px;
+}
+
+.floatclear{
+	clear: both;
+}
+
+/*　ニュース　*/
+.news ul {
+	margin: 0px 0px 0px 30px; 
+	padding: 0px;
+	list-style-image: url('../04_news/img/triangle01.gif');
+}
+.news li {
+	padding: 0px 0px 5px 5px;
+	margin: 0px;
+}
+
+/*　お知らせ　*/
+.oshirase ul {
+	margin: 0px 0px 0px 30px; 
+	padding: 0px;
+	list-style-image: url('../04_news/img/triangle02.gif');
+}
+.oshirase li {
+	padding: 0px 0px 5px 5px;
+	margin: 0px;
+}
+
+/*　サイトマップ　*/
+.sitemap li {
+	padding: 0px 0px 0px 5px;
+	margin:  5px 0px 0px 0px;
+}
+
+
+/*　アンカー　*/
+.totop{
+	text-align: right;
+	margin-top: 10px;
+}

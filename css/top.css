@@ -1,0 +1,129 @@
+html {
+	height: 100%;
+	margin-bottom: 1px;
+}
+
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-image: url(../img/common/maine_background.gif);
+	background-repeat: repeat-x;
+	color: #333333;
+}
+/*　リンク　*/
+	a:link { color: #78a200; } /* 通常（未アクセス）の色 */
+	a:visited { color: #e37252; } /* アクセス済みの色 */
+	a:hover { color: #cda826; }/* ポイント時の色 */
+	a:active { color: #cda826; }/* アクティブ時の色*/
+
+/*　ヘッダー　*/
+#head{
+	width:100%;
+	height: 90px;
+	margin: 0;
+	padding: 0;
+	background-color: #F4AA2A;
+	background-image: url(../img/common/header_background.gif);
+	background-repeat: repeat-x;
+}
+#headimg{
+	width: 780px;
+	height: 90px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*　メイン部分　*/
+#container {
+	width: 754px;
+	margin: 8px auto;
+	padding: 0;
+	background-image: url(../img/box01.gif);
+	background-repeat: no-repeat;
+}
+#container2 {
+	width: 754px;
+	margin: 8px auto;
+	padding: 0;
+	background-image: url(../img/box02.gif);
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+}
+.box1 {
+	width: 205px;
+	padding: 7px 0px 0px 0px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.box2 {
+	width: 526px;
+	height: 281px;
+	padding: 7px 0px 0px 0px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.box3 {
+	width: 205px;
+	height: 300px;
+	padding: 8px 0px 0px 0px;
+	background-color: transparent;
+}
+.box4 {
+	width: 500px;
+	height: 100%;
+	margin: 15px 0px 15px 15px;
+	background-color: transparent;
+}
+
+/*　メニュー部分　*/
+#gmenu01 {
+	margin: 17px 0 0 33px;
+}
+
+#gmenu01 img {
+	margin: 0px;
+	cursor: pointer;
+}
+
+#gmenu02 {
+	margin: 17px 0 0 33px;
+}
+
+#gmenu02 img {
+	margin: 0px;
+	cursor: pointer;
+}
+
+/*　フォント　*/
+.f120 {
+	font-size: 120%;
+}
+
+.f110 {
+	font-size: 110%;
+}
+
+.f90 {
+	font-size: 90%;
+}
+
+.f80 {
+	font-size: 80%;
+}
+/*　フッター　*/
+#foot{
+	width:100%;
+	height: 25px;
+	margin: 0;
+	padding: 20px 0px 0px 0px;
+	background-color: #F5B84F;
+	background-image: url(../img/common/footer_background.gif);
+	background-repeat: repeat-x;
+}
+#footimg{
+	width:611px;
+	height: 16px;
+	margin: 0 auto;
+	padding: 0;
+}

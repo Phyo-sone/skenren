@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------------
+ *	header
+ *--------------------------------------------------------------------*/
+
+body#home header {
+	margin-bottom: 0;
+}
+body#home div#header_contents {
+	/*background: url(../img/main_img_head.gif);*/
+	background-position: left bottom;
+	background-repeat: no-repeat;
+}
+body#home div#gmenu {
+	display: none;
+}
+
+/*--------------------------------------------------------------------
+ *	container
+ *--------------------------------------------------------------------*/
+
+body#home div#container {
+	width: auto;
+	background-color: #fffbeb;
+}
+
+
+/*--------------------------------------------------------------------
+ *	main_visual
+ *--------------------------------------------------------------------*/
+
+body#home div#main_visual {
+	margin: 0;
+	background-color: #079307;
+}
+body#home div#main_visual p {
+	margin: 0;
+	padding: 0;
+}
+body#home div#main_visual p img {
+	display: block;
+	margin: 0 auto;
+}
+
+
+/*--------------------------------------------------------------------
+ *	home_gmenu
+ *--------------------------------------------------------------------*/
+
+body#home div#home_gmenu {
+	margin: 0 0 0;
+	padding: 0 0 18px;
+	background-color: #fff;
+	line-height: 1;
+}
+body#home div#home_gmenu ul {
+	list-style-type: none;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+body#home div#home_gmenu ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*--------------------------------------------------------------------
+ *	main
+ *--------------------------------------------------------------------*/
+
+body#home div#main {
+	float: none;
+	width: 960px;
+	margin: 10px auto 0;
+	padding-bottom: 50px;
+}
+body#home div#main #news_area {
+	position: relative;
+	float: left;
+	width: 700px;
+}
+body#home div#main #news_area h2 {
+	margin: 0 auto 8px;
+}
+body#home div#main #news_area p.index_btn {
+	position: absolute;
+	top: 3px;
+	right: 32px;
+	margin: 0;
+}
+body#home div#main #news_area div.news_list dl {
+	margin: 0;
+}
+body#home div#main #news_area div.news_list dl dt {
+	float: left;
+	clear: both;
+	width: 70px;
+	margin: 0 -6em 0 0;
+	padding: 0 96px 0 0.8em;
+}
+/* body#home div#main #news_area div.news_list dl dt.news {
+	background: transparent url('../img/news_icon_01.gif') no-repeat right top;
+}
+body#home div#main #news_area div.news_list dl dt.report {
+	background: transparent url('../img/news_icon_02.gif') no-repeat right top;
+}
+body#home div#main #news_area div.news_list dl dt.annai {
+	background: transparent url('../img/news_icon_03.gif') no-repeat right top;
+} */
+body#home div#main #news_area div.news_list dl dd {
+	margin: 0 0 0.8em 0;
+	padding: 0 0 0.8em ;
+	border-bottom: 1px solid #d9d9d9;
+}
+body#home div#main #news_area div.news_list dl dd a {
+	text-decoration: none;
+	color: #333333;
+}
+body#home div#main #news_area div.news_list dl dd a:hover {
+	color: #079307;;
+}
+body#home div#main #topics_area {
+	float: right;
+	width: 240px;
+}
+body#home div#main #topics_area h2 {
+	margin: 0;
+}
+body#home div#main #topics_area .photo_topics {
+	margin: 6px auto 10px;
+	padding: 0 0 1px;
+	background-color: #efdd79;
+	font-size: 13px;
+}
+body#home div#main #topics_area .photo_topics span {
+	display: block;
+	margin: 7px;
+	padding: 0 0 0 20px;
+	background: transparent url('../img/arrow.png') no-repeat left 0.2em;
+}
+body#home div#main #topics_area .photo_topics a {
+	text-decoration: none;
+}
+body#home div#main #topics_area .photo_topics a:hover img {
+	opacity: 0.9;
+}
+body#home div#main #topics_area ul {
+	list-style-type: none;
+	margin: 0;
+}
+body#home div#main #topics_area ul li {
+	margin-bottom: 10px;
+}
+body#home div#main #topics_area ul li a:hover img {
+	opacity: 0.9;
+}
+body#home #container #main .link_arrow {
+	position: relative;
+	padding: 0 0 0 20px;
+}
+body#home #container #main .link_arrow::before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: "";
+	width: 12px;
+	height: 12px;
+	margin: auto;
+	background: #7a0;
+	vertical-align: middle;
+}
+body#home #container #main .link_arrow::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 3px;
+	content: "";
+	width: 3px;
+	height: 3px;
+	margin: auto;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	vertical-align: middle;
+}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: !important; }
+.sp { display: none !important; }
+.sp_shodanren { display: none !important; }
+.sp_nakusukai { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+    .sp_shodanren { display: block !important; }
+    .sp_nakusukai { display: block !important; }
+}
+
+/*--------------------------------------------------------------------
+ *	footer
+ *--------------------------------------------------------------------*/
+
+footer {
+	margin-top: 0;
+}
+
+
+/*-------------------------------------------------------------------------------*
+ *	Clear fix
+ *-------------------------------------------------------------------------------*/
+
+body#home div#main_visual,
+body#home div#home_gmenu ul,
+body#home div#main,
+body#home div#main #news_area {
+	zoom: 100%;
+}
+
+body#home div#main_visual:after,
+body#home div#home_gmenu ul:after,
+body#home div#main:after, 
+body#home div#main #news_area:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+.report{
+	display: flex;
+
+}
+dt{
+	display: flex;
+	gap:20px;
+	width: 100%;
+}
+
+.tag span{
+	text-align: center;
+	display: block;
+	width: 90px;
+	height: 20px;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 12px;
+border-radius: 2px;
+
+	
+	
+}
+.tag{
+	display: flex;
+	gap:10px;
+	margin-right: 10px;
+}
+.tag a::visited{
+	color:black !important;
+}
+
+dt{
+	display: block;
+
+}
+dd{
+	display: block;
+}
+
+.埼玉消団連{
+	background-color:#C0A1C2;
+}
+.報告{
+	background-color: #E68B62;
+}
+
+.案内{
+	background-color: #92ABC8;
+}
+.お知らせ{
+	background-color: #98CD68;
+}
+.ピックアップ{
+	display:none !important;
+}
+.thumbnail-img{
+	width: 240px;
+	height: 143.76px;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+.news_list{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+
+}
+.category-box{
+	width:44%;
+	color: #70B743 !important;
+}
+.news-link{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	width: 100%;
+	
+	background-color:#F2F8EE;
+	border: #70B743 2px solid;
+	display: block;
+	font-size: 18px;
+	color: #70B743 !important;
+	
+	text-decoration: none !important;
+	font-weight: bold;
+	position:relative;
+
+	
+
+}
+.news-link::before{
+	
+		content: "";
+		background-image: url(../img/arrow-coop.png);
+		width: 20px;
+		height: 14px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 26px;
+		right: 20px;
+}
+.tag-sp{
+	display: none;
+}

@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------------
+ *	736px以下用（SP用）の記述 ※メディアクエリはHTMLファイル内
+ *--------------------------------------------------------------------*/
+
+/*------------------------------------------ header */
+
+body#home header {
+}
+
+/*------------------------------------------ container */
+
+body#home div#container {
+	width: auto;
+	background-color: #fffbeb;
+}
+
+
+/*------------------------------------------ main_visual */
+
+body#home div#main_visual {
+	margin: 0;
+}
+body#home div#main_visual p {
+	margin: 0;
+	padding: 0;
+}
+body#home div#main_visual p img {
+	display: block;
+	margin: 0 auto;
+}
+
+
+/*------------------------------------------ home_gmenu */
+
+body#home div#home_gmenu {
+	margin: 0 0 0;
+	padding: 0 0 10px;
+	background-color: #fff;
+	line-height: 1;
+}
+body#home div#home_gmenu ul {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+}
+body#home div#home_gmenu ul li {
+	float: left;
+	width : 33.33% ; /* IE8以下とAndroid4.3以下用フォールバック */
+	width : -webkit-calc(100% / 3) ;
+	width : calc(100% / 3) ;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*------------------------------------------ main */
+
+body#home div#main {
+	margin-bottom: 0;
+	padding-bottom: 60px;
+}
+body#home div#main #news_area {
+	position: relative;
+	margin: 20px auto;
+}
+body#home div#main #news_area h2 {
+	margin: 0 auto 8px;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #d9d9d9;
+}
+body#home div#main #news_area p.index_btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	margin: 0;
+}
+body#home div#main #news_area div.news_list dl {
+	margin: 0;
+}
+body#home div#main #news_area div.news_list dl dt {
+	margin: 0 0 0 0;
+	padding: 0 96px 0 0;
+}
+/* body#home div#main #news_area div.news_list dl dt.news {
+	background: transparent url('../img/news_icon_01.gif') no-repeat 7em 0.3em;
+	background-size: 60px auto;
+}
+body#home div#main #news_area div.news_list dl dt.report {
+	background: transparent url('../img/news_icon_02.gif') no-repeat 7em 0.3em;
+	background-size: 60px auto;
+}
+body#home div#main #news_area div.news_list dl dt.annai {
+	background: transparent url('../img/news_icon_03.gif') no-repeat 7em 0.3em;
+	background-size: 60px auto;
+} */
+
+body#home div#main #news_area div.news_list dl dd {
+	margin: 0 0 0.8em 0;
+	padding: 0 0 0.8em 0;
+	border-bottom: 1px solid #d9d9d9;
+}
+body#home div#main #news_area div.news_list dl dd a {
+	text-decoration: none;
+	color: #333333;
+}
+body#home div#main #topics_area {
+}
+body#home div#main #topics_area h2 {
+	margin: 0 auto 1em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #d9d9d9;
+}
+body#home div#main #topics_area .photo_topics {
+	margin: 6px auto 10px;
+	padding: 0 0 1px;
+	background-color: #efdd79;
+	font-size: 13px;
+}
+body#home div#main #topics_area .photo_topics span {
+	display: block;
+	margin: 7px;
+	padding: 0 0 0 20px;
+	background: transparent url('../img/arrow.png') no-repeat left 0.2em;
+}
+body#home div#main #topics_area .photo_topics a {
+	text-decoration: none;
+	color: #333;
+}
+body#home div#main #topics_area ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+body#home #container #main .link_arrow {
+	position: relative;
+	padding: 0 0 0 20px;
+}
+body#home #container #main .link_arrow a {
+	color: #333;
+}
+body#home #container #main .link_arrow::before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: "";
+	width: 12px;
+	height: 12px;
+	margin: auto;
+	background: #7a0;
+	vertical-align: middle;
+}
+body#home #container #main .link_arrow::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 3px;
+	content: "";
+	width: 3px;
+	height: 3px;
+	margin: auto;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	vertical-align: middle;
+}
+
+body#home #container #main div.notice {
+	border: 1px solid #333333;
+	margin: 20px 0;
+	padding: 10px;
+
+}
+
+body#home #container #main div.notice p.notice_news {
+	padding: 10px 0 0 0;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+	color: #333333;
+	font-size: 15px;
+}
+
+br.sp { display:none; }
+br.pc { display:block; }
+
+body#home #container #main div.notice p.mail_sty { 
+	margin: 0 0 0 20px;
+}
+
+body#home #container #main div.notice p.link_arrow {
+	position: relative;
+	padding: 0 0 0 20px;
+	margin-bottom: 0;
+}
+
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .pc { display: none !important; }
+    .sp { display: !important;
+	max-width: 142px; }
+    .sp_shodanren { display: !important;
+	max-width: 80px; }
+    .sp_nakusukai { display: !important;
+	max-width: 150px; }
+}
+/*-------------------------------------------------------------------------------*
+ *	Clear fix
+ *-------------------------------------------------------------------------------*/
+
+body#home div#home_gmenu ul {
+	zoom: 100%;
+}
+
+body#home div#home_gmenu ul:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+
+
+
+/* //// */
+.tag-sp{
+	display: flex;
+	gap: 10px;
+	margin-left: 10px;
+}
+.tag-sp span{
+	text-align: center;
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 12px;
+border-radius: 2px;
+
+	
+	
+}
+.tag{
+display: none;
+}
+.tag-sp a::visited{
+	color:black !important;
+}
+.埼玉消団連{
+	background-color:#C0A1C2;
+}
+.報告{
+	background-color: #E68B62;
+}
+
+.案内{
+	background-color: #92ABC8;
+}
+.お知らせ{
+	background-color: #98CD68;
+}
+.ピックアップ{
+	display:none !important;
+}
+
+.news_list{
+	padding-left: 15px;
+	padding-right: 15px;
+display: block;
+
+
+}
+.category-box{
+	width:100%;
+	color: #70B743 !important;
+}
+.news-link{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+
+	
+	background-color:#F2F8EE;
+	border: #70B743 2px solid;
+	display: block;
+	font-size: 18px;
+	color: #70B743 !important;
+	
+	text-decoration: none !important;
+	font-weight: bold;
+	position:relative;
+	
+
+}
+.news-link::before{
+	
+	content: "";
+	background-image: url(../img/arrow-coop.png);
+	width: 20px;
+	height: 14px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 26px;
+	right: 20px;
+}

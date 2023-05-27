@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+
+@import "default.css";
+@import "tools.css";
+@import "base.css";
+@import "home.css";
+@import "second.css";
+
+/* font size chart -----------------------------------------
+
+.f10 {
+	font-size: 85%;
+}
+.f11 {
+	font-size: 90%;
+}
+.f12 {
+	font-size: 100%;
+}
+.f13 {
+	font-size: 110%;
+}
+.f14 {
+	font-size: 120%;
+}
+.f15 {
+	font-size: 125%;
+}
+.f16 {
+	font-size: 135%;
+}
+.f17 {
+	font-size: 145%;
+}
+.f18 {
+	font-size: 150%;
+}
+.f19 {
+	font-size: 160%;
+}
+.f20 {
+	font-size: 170%;
+}
+.f21 {
+	font-size: 175%;
+}
+.f22 {
+	font-size: 185%;
+}
+.f23 {
+	font-size: 195%;
+}
+.f24 {
+	font-size: 200%;
+}
+.f25 {
+	font-size: 210%;
+}
+.f26 {
+	font-size: 220%;
+}
+.f27 {
+	font-size: 225%;
+}
+.f28 {
+	font-size: 235%;
+}
+.f29 {
+	font-size: 245%;
+}
+.f30 {
+	font-size: 250%;
+}
+.f31 {
+	font-size: 260%;
+}
+.f32 {
+	font-size: 270%;
+}
+.f33 {
+	font-size: 275%;
+}
+.f34 {
+	font-size: 285%;
+}
+.f35 {
+	font-size: 295%;
+}
+.f36 {
+	font-size: 300%;
+}
+
+/* ------------------------------------------------------*/

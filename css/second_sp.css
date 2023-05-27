@@ -1,0 +1,732 @@
+@charset "UTF-8";
+
+
+/*--------------------------------------------------------------------
+ *	736px以下用（SP用）の記述 ※メディアクエリはHTMLファイル内
+ *--------------------------------------------------------------------*/
+
+.second #container #main h2 {
+	margin: 0 0 1em;
+	padding: 16px 0;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	font-size: 20px;
+}
+.designated #container #main h2 {
+	color: #003973;
+}
+.second #container #main h3 {
+	margin: 1.5em 0 1em;
+	padding: 0 0 8px;
+	background: transparent url("../img/h3_bg.gif") repeat-x scroll left bottom;
+	font-size: 18px;
+	font-weight: bold;
+}
+.second #container #main h3 .sub {
+	font-size: 14px;
+}
+.second #container #main h4 {
+	margin: 1.5em 0 1em;
+	padding-left: 12px;
+	border-left: 4px solid #71b539;
+	font-size: 16px;
+	font-weight: bold;
+}
+.second #container #main h5 {
+	position: relative;
+	margin: 1.5em 0 1em;
+	padding: 0 0 0 24px;
+	font-weight: bold;
+}
+.second #container #main h5::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 4px solid #71b539;
+	left: 0;
+	top: 0.2em;
+}
+
+ul.news_list {
+	margin: 0;
+}
+ul.news_list li.left {
+	margin: 0 25px 30px 0;
+	padding-top: 0;
+	list-style-type: none;
+}
+ul.news_list li{
+	margin: 0 0 30px 0;
+	padding-top: 0;
+	list-style-type: none;
+}
+body#second #container #backnumber ul.link_list,
+body#second #container #oldtopics ul.link_list,
+body#second #container #backnews ul.link_list {
+	position: relative;
+	list-style-type: none;
+	margin: 1em 0;
+}
+body#second #container #backnumber ul.link_list li,
+body#second #container #oldtopics ul.link_list li,
+body#second #container #backnews ul.link_list li {
+	position: relative;
+	margin: 0 20px 0.5em 0;
+	float: left;
+}
+
+body#second #container #backnumber ul.link_list li::before,
+body#second #container #oldtopics ul.link_list li::before,
+body#second #container #backnews ul.link_list li::before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: "";
+	width: 12px;
+	height: 12px;
+	margin: auto;
+	background: #7a0;
+	vertical-align: middle;
+}
+body#second #container #backnumber ul.link_list li::after,
+body#second #container #oldtopics ul.link_list li::after,
+body#second #container #backnews ul.link_list li::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 3px;
+	content: "";
+	width: 3px;
+	height: 3px;
+	margin: auto;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	vertical-align: middle;
+}
+
+body#second #container #backnumber h3,
+body#second #container #oldtopics h3,
+body#second #container #backnews h3 {
+	margin: 1.5em 0 1em;
+	padding: 0 0 8px;
+	background: transparent url("../img/h3_bg.gif") repeat-x scroll left bottom;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+body.news #container #main ol.romaji_num,
+body.report #container #main ol.romaji_num {
+	margin-left: 0;
+	list-style-type: none;
+}
+body.news #container #main ol.romaji_num > li,
+body.report #container #main ol.romaji_num > li {
+	margin-left: 1.8em;
+	text-indent: -1.8em;
+}
+body.news #container #main ol.romaji_num ol.default_num,
+body.report #container #main ol.romaji_num ol.default_num {
+	margin-left: 1.8em;
+}
+body.news #container #main ol.romaji_num ol.default_num > li,
+body.report #container #main ol.romaji_num ol.default_num > li {
+	text-indent: 0;
+}
+
+/*------------------------------------------------ 06_sokuho */
+
+.sokuho #container #main .news_center dl {
+	position: relative;
+	width: 165px;
+	margin: 0 auto;
+	border: 1px solid #e6e6e6;
+	overflow: hidden;
+}
+
+.sokuho #container #main .photonews_list dl {
+	position: relative;
+	float: left;
+	width: 48%;
+	margin: 0 4% 20px 0;
+	border: 1px solid #e6e6e6;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.sokuho #container #main .photonews_list dl:nth-child(2n),
+.sokuho #container #main .news_center dl:nth-child(2n) {
+	margin-right: 0;
+}
+.sokuho #container #main .photonews_list dl:nth-child(5n),
+.sokuho #container #main .news_center dl:nth-child(5n) {
+	clear: both;
+}
+.sokuho #container #main .photonews_list dl.new::after,
+.sokuho #container #main .news_center dl.new::after {
+	position: absolute;
+	content: "NEW";
+	transform: rotate(315deg);
+	display: block;
+	font-size: 11px;
+	white-space: pre;
+	color: #fff;
+	top: 6px;
+	left: -14px;
+	width: 60px;
+	background-color: #f00;
+	text-align: center;
+	z-index: 2;
+	line-height: 1.6;
+}
+.sokuho #container #main .photonews_list dl dt,
+.sokuho #container #main .news_center dl dt {
+	margin: 0;
+	padding: 0;
+}
+.sokuho #container #main .photonews_list dl dd,
+.sokuho #container #main .news_center dl dd {
+	margin: 0;
+	padding: 8px 9px;
+}
+.sokuho #container #main .photonews_list dl dd .ttl,
+.sokuho #container #main .news_center dl dd .ttl {
+	margin: 0 0 0.5em;
+	font-weight: bold;
+}
+.sokuho #container #main .photonews_list dl dd .btn_more,
+.sokuho #container #main .news_center dl dd .btn_more {
+	margin: 0;
+	text-align: center;
+	font-size: 13px;
+}
+.sokuho #container #main .photonews_list dl dd .btn_more a,
+.sokuho #container #main .news_center dl dd .btn_more a {
+	position: relative;
+	display: block;
+	padding: 5px;
+	background-color: #dbf3c7;
+	text-decoration:none;
+	line-height: 1.2;
+	color: #333333;
+}
+.sokuho #container #main .photonews_list dl dd .btn_more a::after,
+.sokuho #container #main .news_center dl dd .btn_more a::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 10px;
+	content: "";
+	width: 6px;
+	height: 6px;
+	margin: auto;
+	border-top: 1px solid #079307;
+	border-right: 1px solid #079307;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	vertical-align: middle;
+}
+
+.sokuho #container #main div.txt_left {
+	text-align: left;
+}
+
+
+
+/*------------------------------------------------ common - table */
+.second #container #main table {
+	width: 100%;
+	border: none;
+	font-size: 12px;
+}
+.second #container #main table tr {
+	border-top: 2px solid #e6e6e6;
+	border-bottom: 2px solid #e6e6e6;
+}
+.second #container #main table th,
+.second #container #main table td {
+	padding: 5px 5px;
+	border: none;
+	border-right: 1px solid #e6e6e6;
+}
+.second #container #main table th {
+	text-align: center;
+	background-color: #f6fbf1;
+}
+.second #container #main table th:last-child,
+.second #container #main table td:last-child {
+	border-right: none;
+}
+
+
+/*------------------------------------------------ common - topics list */
+
+.second #container #main dl.topics_list {
+	margin: 2em 0 1em 0;
+}
+.second #container #main dl.topics_list dt {
+	position: relative;
+	float: left;
+	width: 8em;
+	margin: 0 -8em 0 0;
+	padding: 0 0 0 20px;
+}
+.second #container #main dl.topics_list dt::before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: "";
+	width: 12px;
+	height: 12px;
+	margin: auto;
+	background: #7a0;
+	vertical-align: middle;
+}
+.second #container #main dl.topics_list dt::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 3px;
+	content: "";
+	width: 3px;
+	height: 3px;
+	margin: auto;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	vertical-align: middle;
+}
+.second #container #main dl.topics_list dd {
+	margin: 0 0 0.5em;
+	padding: 0 0 0.5em 8.5em;
+	border-bottom: 1px dotted #e6e6e6;
+}
+
+/*------------------------------------------------ common - link list, link_arrow */
+.second #container #main ul.link_list {
+	position: relative;
+	list-style-type: none;
+	margin: 1em 0;
+}
+.kanyu #container #main ul.link_list {
+	position: relative;
+	list-style-type: none;
+	margin: 0;
+}
+.second #container #main ul.link_list li {
+	position: relative;
+	margin: 0 0 0.5em 0;
+}
+.second #container #main ul.link_list li::before {
+	position: absolute;
+	top: 0.3em;
+	left: 0;
+	content: "";
+	width: 12px;
+	height: 12px;
+	background: #7a0;
+	vertical-align: middle;
+}
+.second #container #main ul.link_list li::after {
+	position: absolute;
+	top: calc(0.3em + 4px);
+	left: 3px;
+	content: "";
+	width: 3px;
+	height: 3px;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	vertical-align: middle;
+}
+.second #container #main ul.link_list li,
+.second #container #main p.link_arrow {
+	padding: 0 0 0 20px;
+}
+.second #container #main .link_arrow {
+	position: relative;
+	padding: 0 0 0 15px;
+}
+.second #container #main .link_arrow::before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: "";
+	width: 12px;
+	height: 12px;
+	margin: auto;
+	background: #7a0;
+	vertical-align: middle;
+}
+.second #container #main .link_arrow::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 3px;
+	content: "";
+	width: 3px;
+	height: 3px;
+	margin: auto;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	vertical-align: middle;
+}
+
+/*------------------------------------------------ common - colored box */
+.second #container #main div.gray_box {
+	padding: 1px 1em;
+	border: 1px solid #cccccc;
+}
+.second #container #main p.gray_box {
+	padding: 1em;
+	border: 1px solid #cccccc;
+}
+.second #container #main div.yellow_box {
+	padding: 1px 1em;
+	border: 1px solid #fffbe8;
+	background-color: #fffbe8;
+}
+.second #container #main p.yellow_box {
+	padding: 1em;
+	border: 1px solid #fffbe8;
+	background-color: #fffbe8;
+}
+
+/*------------------------------------------------ common - colored box */
+
+.second #container #main .img_box {
+	text-align: center;
+}
+.second #container #main .img_box p {
+	display: inline-block;
+	margin: 0 10px 15px 0;
+	text-align: center;
+	font-size: 12px;
+	vertical-align: top;
+}
+.second #container #main .img_box p:nth-child(3n) {
+	margin-right: 0;
+}
+.second #container #main .img_box p img {
+	margin-bottom: 5px;
+}
+
+
+/*------------------------------------------------ 02_about */
+.about #container #main div#profile table.profile tr th.coop_name {
+	width: 8em;
+}
+
+.about #container #main div#yakuin table.director_list tr th.position_name,
+.about #container #main div#yakuin table.director_list tr th.name {
+	width: 6em;
+}
+
+.about #container #main div.scroll-table table {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.about #container #main table caption {
+	text-align: right;
+}
+
+.about #container #main .ggmap {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.about #container #main .ggmap iframe,
+.about #container #main .ggmap object,
+.about #container #main .ggmap embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.about #container #main div.scroll-table table.member_meibo {
+    width: auto;
+}
+.about #container #main div.scroll-table table.member_meibo tbody {
+	display: block;
+	width: 100%;
+}
+.about #container #main div.scroll-table table.member_meibo tbody tr,
+.about #container #main div.scroll-table table.member_meibo tbody tr.border_top,
+.about #container #main div.scroll-table table.member_meibo tbody tr.thead,
+.about #container #main div.scroll-table table.member_meibo tr.last {
+	display: block;
+	width: 100%;
+	border-top: none;
+}
+.about #container #main div.scroll-table table.member_meibo tr td,
+.about #container #main div.scroll-table table.member_meibo tr.thead th,
+.about #container #main div.scroll-table table.member_meibo tr.last th,
+.about #container #main div.scroll-table table.member_meibo tr.last td:last-child {
+    border-right: none;
+}
+.about #container #main div.scroll-table table.member_meibo tr.last th.none,
+.about #container #main div.scroll-table table.member_meibo tr.thead th.none {
+	display: none;
+}
+.about #container #main div.scroll-table table.member_meibo th,
+.about #container #main div.scroll-table table.member_meibo th.none,
+.about #container #main div.scroll-table table.member_meibo td {
+	border-bottom: none;
+	border-right: none;
+	display: block;
+}
+.about #container #main div.scroll-table table.member_meibo tr.thead th {
+	border-top: 2px solid #e6e6e6;
+}
+.about #container #main div.scroll-table table.member_meibo tr td {
+	padding: 0 5px;
+}
+.about #container #main div.scroll-table table.member_meibo tr td:first-child {
+	padding-top: 5px;
+	font-weight: bold;
+}
+.about #container #main div.scroll-table table.member_meibo tr td:last-child {
+	padding-bottom: 5px;
+}
+.about #container #main div.scroll-table table.member_meibo tr td:nth-child(3)::before {
+	content: "代表者：";
+}
+
+
+/*------------------------------------------------ 08_access */
+.access #container #main table caption {
+	text-align: right;
+}
+
+.access #container #main .ggmap {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.access #container #main .ggmap iframe,
+.access #container #main .ggmap object,
+.access #container #main .ggmap embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*------------------------------------------------ 10_otoi */
+.otoi #container #main .for_tel {
+	width: auto;
+	padding: 0 15px;
+	margin: 0 0 20px 0;
+	border: 2px solid #d9d9d9;
+}
+.otoi #container #main .for_mail {
+	width: auto;
+	padding: 0 15px;
+	margin: 0;
+	border: 2px solid #d9d9d9;
+}
+.otoi #container #main .for_tel h4,
+.otoi #container #main .for_mail h4 {
+	margin-top: 1em;
+}
+.otoi #container #main .number{
+	margin: 0;
+	padding: 0 0 0 30px;
+	background: transparent url("../img/tel.png") no-repeat left top;
+	line-height: 1;
+	font-size: 187.5%;
+	font-weight: bold;
+	color: #079307;
+}
+.otoi #container #main .tel_link a {
+	color: #079307;
+	text-decoration:none;
+}
+
+.otoi #container #main .time {
+	padding-left: 5.8em;
+	text-indent: -5.8em;
+}
+.otoi #container #main .time span {
+	margin-right: 10px;
+	padding: 0 0.5em;
+	border: 1px solid #333;
+}
+.otoi #container #main .mail {
+	color: #fff;
+	line-height: 1;
+	font-size: 20px;
+	font-weight: bold;
+}
+.otoi #container #main .mail a {
+	display: block;
+	width: 160px;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 3px;
+	background-color: #079307;
+	text-align: center;
+	text-decoration:none;
+	color: #fff;
+}
+
+.otoi #container #main .mail a span {
+	padding-left: 30px;
+	background: transparent url("../img/mail.gif") no-repeat left 0.4em;
+}
+
+
+/*------------------------------------------------ 12_sitemap */
+
+.sitemap #container #main h3 a {
+	position: relative;
+	display: block;
+	text-decoration:none;
+}
+.sitemap #container #main h3 a::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 5px;
+	content: "";
+	width: 6px;
+	height: 6px;
+	margin: auto;
+	border-top: 1px solid #7a0;
+	border-right: 1px solid #7a0;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	vertical-align: middle;
+}
+
+
+
+/*------------------------------------------------ 18_report */
+
+body.report div#container #main dl.topics_list dt {
+	float: none;
+	width: auto;
+}
+body.report div#container #main dl.topics_list dd {
+	padding-left: 20px;
+}
+
+/*------------------------------------------ news */
+
+
+/*------------------------------------------------ 04_news */
+.news #container #main h4 span {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+#second div#main ul.news_list li:nth-child(2n+1) {
+	margin: 0 0 30px 0;
+}
+
+/*------------------------------------------------ 17_member */
+
+body.designated div#container #main dl.topics_list dt {
+	float: none;
+	margin-right: 0;
+	width: auto;
+}
+body.designated div#container #main dl.topics_list dd {
+	padding-left: 20px;
+}
+
+.designated #container #main table.schedule {
+	width: auto;
+	font-size: 14px;
+}
+.designated #container #main table.schedule tbody {
+	display: block;
+	width: 100%;
+}
+.designated #container #main table.schedule tr.last {
+	display: block;
+	width: 100%;
+	border-top: none;
+}
+.designated #container #main table.schedule tr td,
+.designated #container #main table.schedule tr.last th,
+.designated #container #main table.schedule tr.last td:last-child {
+    border-right: none;
+}
+
+.designated #container #main table.schedule th {
+	border-bottom: 1px dashed #e6e6e6;
+	border-right: none;
+	display: block;
+	text-align: left;
+	font-weight: bold;
+}
+
+.designated #container #main table.schedule td {
+	border-right: none;
+	display: block;
+}
+
+.designated #container #main table.schedule tr td {
+	padding: 10px;
+}
+
+.designated #container #main ul.selector {
+	padding: 0;
+	margin: 0;
+}
+
+.designated #container #main ul.selector li {
+	display: inline-block;
+	margin-right: 10px;
+	width: 7em;
+}	
+
+.designated #container #main ul.selector li:nth-child(3n) {
+	padding: 0;
+}
+
+/*-------------------------------------------------------------------------------*
+ *	Clear fix
+ *-------------------------------------------------------------------------------*/
+
+.second #container,
+.second #container main ul.link_list,
+.photonews_list {
+	zoom: 100%;
+}
+.second #container:after,
+.second #container main ul.link_list:after,
+.photonews_list:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+
+

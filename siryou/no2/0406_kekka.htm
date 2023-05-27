@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<TITLE>地域別測定結果</TITLE>
+<SCRIPT language="JavaScript">
+<!--
+function changeImage(imgnum){
+    if(imgnum==1){
+        document.myimg.src="./image/0406/toubu.gif";
+    }else if(imgnum==2){
+        document.myimg.src="./image/0406/chuou.gif";
+    }else if(imgnum==3){
+        document.myimg.src="./image/0406/seibu.gif";
+    }else if(imgnum==4){
+        document.myimg.src="./image/0406/osato.gif";
+    }
+}
+// -->
+</SCRIPT>
+<SCRIPT language="JavaScript">
+<!--
+function CloseWin(){
+    window.close();
+}
+// -->
+</SCRIPT>
+
+</HEAD>
+<BODY>
+<CENTER>
+  <img src="./image/0406/toubu.gif" name="myimg" border=0>
+<FORM>
+    <p> 
+      <INPUT type="button" value="東部地域" onClick="changeImage(1)">
+      <INPUT type="button" value="中央地域" onClick="changeImage(2)">
+      <input type="button" value="西部第一" onClick="changeImage(3)">
+	  <input type="button" value="大里地域" onClick="changeImage(4)">
+    </p>
+    <p>
+      <input type="button" value="ウィンドウを閉じる" onClick="CloseWin()" name="button">
+    </p>
+  </FORM>
+  <p>　
+</CENTER>
+</BODY>
+</HTML>
